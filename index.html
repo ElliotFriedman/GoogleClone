@@ -1,4 +1,4 @@
-<!doctype HTML>
+<!DOCTYPE html>
 
 <html>
 
@@ -7,23 +7,40 @@
 		<link rel = "stylesheet"
 		type = "text/css"
 		href = "css/style.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</head>
 
 	<body>
 
 		<img src="https://www.google.com/logos/doodles/2019/new-years-day-2019-5179180558843904.3-2xa.gif"></img>
-		<form action="src/search.js">
-			<input type="text" name="Gsearch" size="35"><br>
-
-			</input>
+		<form> <!--  action="src/search.js"> -->
+			<input id="t1" type="text" name="Gsearch" size="35"><br></input>
+			<input class="search" id="search" type="submit" value="Google Search"></input>
+			<input class="feeling-lucky" type="submit" value="I'm Feeling Lucky"></input>
 		</form>
 		<!-- Put JS here -->
-		<button class="learn">
-		Google Search
-		</button>
-		<button class="learnt">
-			I'm Feeling Lucky
-		</button>
+		<script src="js/script.js"></script>
+		<!-- Little Surprise -->
+		<p id="hiddenMessage" style="display:none">You won 21 Million Bitcoins</p>
+
+		<div id="container">
+			<h1 id="heading">Second Header</h1>
+			<h1 id="heading1">Hello There</h1>
+			<p id="paragraph1">Lorem Ipsum....</p>
+		</div>
+
+		<!-- Jquery here -->
+		<script>
+			$('h1').hide();
+		//	$('p').hide();
+			$('#button1').click(function(){
+				alert("You just searched google!");
+			});
+			$(document).on('mousemove', function(e) {
+				$("#paragraph1").html("Coord y: " + e.clientY + "Coord x: " + e.clientX + "\n");
+			});
+		</script>
+
 	</body>
 
 </html>

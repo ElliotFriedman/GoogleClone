@@ -12,14 +12,16 @@ img {
 	transform: translate(-50%, -50%);
 }
 
-.learn {
+.search {
+	width: 10%;
 	position: absolute;
 	top: 47%;
 	left: 50%;
-	transform: translate(-120%, -50%);
+	transform: translate(-120%, -50%);	
 }
 
-.learnt {
+.feeling-lucky {
+	width: 10%;
 	position: absolute;
 	top: 47%;
 	left: 50%;
