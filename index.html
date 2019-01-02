@@ -3,10 +3,10 @@
 <html>
 
 	<head>
-		<!-- Put CSS here -->
 		<link rel = "stylesheet"
 		type = "text/css"
-		href = "css/style.css" />
+		href = "/css/style.css" />
+
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</head>
 
@@ -18,10 +18,6 @@
 			<input class="search" id="search" type="submit" value="Google Search"></input>
 			<input class="feeling-lucky" type="submit" value="I'm Feeling Lucky"></input>
 		</form>
-		<!-- Put JS here -->
-		<script src="js/script.js"></script>
-		<!-- Little Surprise -->
-		<p id="hiddenMessage" style="display:none">You won 21 Million Bitcoins</p>
 
 		<div id="container">
 			<h1 id="heading">Second Header</h1>
@@ -32,13 +28,13 @@
 		<!-- Jquery here -->
 		<script>
 			$('h1').hide();
-		//	$('p').hide();
+//	$('p').hide();
 
-			$('form').submit(function(e){
-				e.preventDefault();
+/*			$('form').submit(function(e){
+e.preventDefault();
 				alert("You just searched for: " + this.elements.Gsearch.value);
 			});
-
+*/
 			$(document).on('mousemove', function(e) {
 				$("#paragraph1").html("Coord y: " + e.clientY + "Coord x: " + e.clientX + "\n");
 			});
