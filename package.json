@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ElliotFriedman/GoogleClone#readme",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "express": "^4.16.4",
+    "http-server": "^0.11.1",
+    "path": "^0.12.7"
   }
 }
