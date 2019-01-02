@@ -33,9 +33,12 @@
 		<script>
 			$('h1').hide();
 		//	$('p').hide();
-			$('#button1').click(function(){
-				alert("You just searched google!");
+
+			$('form').submit(function(e){
+				e.preventDefault();
+				alert("You just searched for: " + this.elements.Gsearch.value);
 			});
+
 			$(document).on('mousemove', function(e) {
 				$("#paragraph1").html("Coord y: " + e.clientY + "Coord x: " + e.clientX + "\n");
 			});
